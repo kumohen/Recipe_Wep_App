@@ -1,15 +1,23 @@
 body{
-    text-align: center;
-    margin: auto;
+  
+    
     padding: 5%;
 
 }
-.form{
-    text-align: center;
+.title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+.form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .recipe-item{
     display: flex;
-    align-items: center;
+ 
     justify-content: center;
     margin: 10px;
     padding: 5px;
@@ -19,7 +27,7 @@ body{
     display: inline-block;
     text-align: left;
     padding-right: 10px;
-    width: 400px;
+    width: 450px;
 }
 .recipe-image{
     display: inline-block;
@@ -39,4 +47,13 @@ body{
     position: absolute;
     left:30px;
     top:30px;
+}
+.form-inline label{
+    margin-right: 5px;
+    color:red;
+    font-size: 20px;
+}
+.form-inline .form-control {
+   
+    margin-right: 7px;
 }

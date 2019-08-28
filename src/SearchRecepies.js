@@ -19,30 +19,30 @@ class SearchRecepies extends Component {
     render() {
         return (
             <div className="form">
-                <Form inline>
-                    <Form.Group >
-                        <Form.Label>Ingredent</Form.Label>
-                        {' '}
-                        <Form.Control type="text" 
-                        onChange={event => this.setState({ingredients:event.target.value})}
-                        placeholder="@example: garlic" />
-                      
-                    </Form.Group>
-                       
-                    <Form.Group >
-                     
-                        <Form.Label>Dish</Form.Label>
-                        {' '}
-                        <Form.Control type="text"
-                          onChange={event => this.setState({dish:event.target.value})}
-                            placeholder="@example:pizza" />
-                    </Form.Group>
+            <Form inline>
+                <Form.Group >
+                    <Form.Label> Ingredent {' '}</Form.Label>
+                    {' '}
+                    <Form.Control type="text" 
+                    onChange={event => this.setState({ingredients:event.target.value})}
+                    placeholder="@example: garlic" />
+                  
+                </Form.Group>
+                   
+                <Form.Group >
                  
-                    <Button   onClick={()=> this.search()}>
-                        Submit
-                    </Button>
-                </Form>
-            </div>
+                    <Form.Label>Dish</Form.Label>
+                   
+                    <Form.Control type="text"
+                      onChange={event => this.setState({dish:event.target.value})}
+                        placeholder="@example:pizza"  />
+                </Form.Group>
+             
+                <Button variant="outline-primary"  onClick={()=> this.search()}>
+                    Submit
+                </Button>
+            </Form>
+        </div>
         );
     }
 }

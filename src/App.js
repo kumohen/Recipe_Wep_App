@@ -8,9 +8,11 @@ class App extends Component {
   render() {
     console.log(this.props)
     return (
-      <div>
-        <h3>Recipe App</h3>
+      <div >
+        <h3 className="title">Recipe App</h3>
+       
         <SearchRecepies/>
+    
         <RecipeList/>
      
       </div>
